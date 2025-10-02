@@ -1,35 +1,33 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Consulta de Calificaciones primer parcail 5G 2025</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <meta name="description" content="  " />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Consulta de Calificaciones</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<meta name="description" content="Sitio gratuito para consultar calificaciones por número de matrícula." />
 </head>
 <body class="min-h-screen bg-slate-50 text-slate-800">
-  <header class="max-w-3xl mx-auto px-4 pt-10 pb-4">
-    <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Consulta de Calificaciones</h1>
-    <p class="mt-2 text-sm text-slate-600">Escribe tu <span class="font-semibold">número de matrícula</span> tal como aparece en la credencial del plantel.</p>
-  </header>
+<header class="max-w-3xl mx-auto px-4 pt-10 pb-4">
+<h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Consulta de Calificaciones</h1>
+<p class="mt-2 text-sm text-slate-600">Escribe tu <span class="font-semibold">número de matrícula</span> tal como aparece en la lista del plantel.</p>
+</header>
 
-  <main class="max-w-3xl mx-auto px-4 pb-16">
-    <div class="bg-white rounded-2xl shadow-sm ring-1 ring-slate-200 p-5 sm:p-6">
-      <form id="form" class="flex flex-col sm:flex-row gap-3 items-stretch sm:items-end">
-        <div class="flex-1">
-          <label for="matricula" class="block text-sm font-medium text-slate-700">Matrícula</label>
-          <input id="matricula" name="matricula" type="text" inputmode="numeric" autocomplete="off"
-                 class="mt-1 w-full rounded-xl border-slate-300 focus:border-indigo-500 focus:ring-indigo-500 px-4 py-2.5"
-                 placeholder="Ej. 202500123" required>
-        </div>
-        <button type="submit" id="btnBuscar"
-                class="rounded-xl px-5 py-2.5 font-semibold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm">
-          Consultar
-        </button>
-      </form>
 
-     
-  </main>
+<main class="max-w-3xl mx-auto px-4 pb-16">
+<div class="bg-white rounded-2xl shadow-sm ring-1 ring-slate-200 p-5 sm:p-6">
+<form id="form" class="flex flex-col sm:flex-row gap-3 items-stretch sm:items-end">
+<div class="flex-1">
+<label for="matricula" class="block text-sm font-medium text-slate-700">Matrícula</label>
+<input id="matricula" name="matricula" type="text" inputmode="numeric" autocomplete="off"
+class="mt-1 w-full rounded-xl border-slate-300 focus:border-indigo-500 focus:ring-indigo-500 px-4 py-2.5"
+placeholder="Ej. 202500123" required>
+</div>
+<button type="submit" id="btnBuscar"
+class="rounded-xl px-5 py-2.5 font-semibold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm">
+Consultar
+</button>
+</form>
 
   
   <script>
