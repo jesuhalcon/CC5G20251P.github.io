@@ -40,11 +40,8 @@ Consultar
 
 <div id="mensaje" class="mt-6 hidden"></div>
   <script>
-    // ==========================
-    // 1) DATA: EDITA ESTA LISTA
-    // ==========================
-    // Reemplaza el contenido de DATA con tus matrículas reales.
-    // Clave = matrícula (string). Valor = { nombre: string, calificacion: número | string }
+
+    
     let DATA = {
       "202500101": { nombre: "Hortilla-Méndez, Tania Arleth", calificacion: 85 },
       "202500102": { nombre: "Cruz Contreras, Ángel Gabriel", calificacion: 74 },
@@ -53,12 +50,10 @@ Consultar
       "202500105": { nombre: "Arcos Velasco, Jesús Antonio", calificacion: 80 }
     };
 
-    // Marca de tiempo (puedes actualizarla cuando edites DATA)
+
     const LAST_UPDATED = new Date().toLocaleString();
 
-    // ==========================
-    // 2) LÓGICA DE BÚSQUEDA
-    // ==========================
+
     const form = document.getElementById('form');
     const input = document.getElementById('matricula');
     const resultado = document.getElementById('resultado');
@@ -126,9 +121,7 @@ Consultar
 
     document.getElementById('ultima').textContent = LAST_UPDATED;
 
-    // ==========================
-    // 3) IMPORTADOR CSV (opcional para pruebas locales)
-    // ==========================
+
     const abrirImportador = document.getElementById('abrirImportador');
     const panelImportador = document.getElementById('panelImportador');
     const btnCargarCSV = document.getElementById('btnCargarCSV');
@@ -141,7 +134,7 @@ Consultar
     });
 
     function parseCSV(text) {
-      // Soporte básico: separa por líneas y comas. Manejo simple de comas dentro de nombre.
+
       const lines = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
       const out = {};
       for (const line of lines) {
