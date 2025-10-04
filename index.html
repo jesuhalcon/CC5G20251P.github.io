@@ -17,7 +17,7 @@
       <form id="form" class="flex flex-col sm:flex-row gap-3 items-stretch sm:items-end">
         <div class="flex-1">
           <label for="matricula" class="block text-sm font-medium text-slate-700">Matrícula</label>
-          <input id="matricula" name="matricula" type="text" inputmode="numeric" autocomplete="off"
+          <input id="matricula" name="matricula" type="number" autocomplete="off"
                  class="mt-1 w-full rounded-xl border-slate-300 focus:border-indigo-500 focus:ring-indigo-500 px-4 py-2.5"
                  placeholder="Ej. 202500123" required>
         </div>
@@ -37,10 +37,378 @@
 
   <script>
     let DATA = {
-      "202500101": { apuntes: 85, tarea: 90, test: 78, posttest: 82 },
-      "202500102": { apuntes: 70, tarea: 65, test: 72, posttest: 75 },
-      "202500103": { apuntes: 88, tarea: 92, test: 81, posttest: 85 }
-    };
+  "25330061340370": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 50.0,
+    "calificacion": 100.0
+  },
+  "25330061340371": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 37.5,
+    "calificacion": 87.5
+  },
+  "25330061340372": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 15.0,
+    "posttest": 39.58,
+    "calificacion": 84.58
+  },
+  "25330061340373": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 27.08,
+    "calificacion": 77.08
+  },
+  "25330061340374": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 35.42,
+    "calificacion": 85.42
+  },
+  "25330061340375": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 18.8,
+    "calificacion": 68.8
+  },
+  "25330061340376": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 27.08,
+    "calificacion": 77.08
+  },
+  "25330061340377": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 25.0,
+    "calificacion": 75.0
+  },
+  "25330061340378": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 10.0,
+    "posttest": 29.17,
+    "calificacion": 69.17
+  },
+  "25330061340379": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 0.0,
+    "posttest": 33.33,
+    "calificacion": 63.33
+  },
+  "25330061340380": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 43.8,
+    "calificacion": 93.8
+  },
+  "25330061340381": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 37.5,
+    "calificacion": 87.5
+  },
+  "25330061340382": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 47.92,
+    "calificacion": 97.92
+  },
+  "25330061340383": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 35.42,
+    "calificacion": 85.42
+  },
+  "25330061340384": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 43.8,
+    "calificacion": 93.8
+  },
+  "25330061340385": {
+    "apuntes": 0.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 20.83,
+    "calificacion": 60.83
+  },
+  "25330061340386": {
+    "apuntes": 5.0,
+    "tarea": 10.0,
+    "test": 10.0,
+    "posttest": 20.83,
+    "calificacion": 45.83
+  },
+  "25330061340387": {
+    "apuntes": 0.0,
+    "tarea": 20.0,
+    "test": 0.0,
+    "posttest": 0.0,
+    "calificacion": 20.0
+  },
+  "25330061340388": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 10.0,
+    "posttest": 29.17,
+    "calificacion": 69.17
+  },
+  "25330061340389": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 43.8,
+    "calificacion": 93.8
+  },
+  "25330061340390": {
+    "apuntes": 0.0,
+    "tarea": 20.0,
+    "test": 10.0,
+    "posttest": 29.17,
+    "calificacion": 59.17
+  },
+  "25330061340391": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 31.3,
+    "calificacion": 81.3
+  },
+  "25330061340392": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 6.3,
+    "calificacion": 56.3
+  },
+  "25330061340393": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 20.83,
+    "calificacion": 70.83
+  },
+  "25330061340394": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 10.0,
+    "posttest": 27.08,
+    "calificacion": 67.08
+  },
+  "25330061340395": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 33.33,
+    "calificacion": 83.33
+  },
+  "25330061340396": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 10.0,
+    "posttest": 20.83,
+    "calificacion": 60.83
+  },
+  "25330061340397": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 31.3,
+    "calificacion": 81.3
+  },
+  "25330061340398": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 31.3,
+    "calificacion": 81.3
+  },
+  "25330061340399": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 31.3,
+    "calificacion": 81.3
+  },
+  "25330061340400": {
+    "apuntes": 5.0,
+    "tarea": 10.0,
+    "test": 10.0,
+    "posttest": 6.3,
+    "calificacion": 31.3
+  },
+  "25330061340401": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 29.17,
+    "calificacion": 79.17
+  },
+  "25330061340402": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 14.58,
+    "calificacion": 64.58
+  },
+  "25330061340403": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 10.42,
+    "calificacion": 60.42
+  },
+  "25330061340404": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 37.5,
+    "calificacion": 87.5
+  },
+  "25330061340405": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 35.42,
+    "calificacion": 85.42
+  },
+  "25330061340406": {
+    "apuntes": 5.0,
+    "tarea": 10.0,
+    "test": 10.0,
+    "posttest": 31.3,
+    "calificacion": 56.3
+  },
+  "25330061340407": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 29.17,
+    "calificacion": 79.17
+  },
+  "25330061340408": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 10.42,
+    "calificacion": 60.42
+  },
+  "25330061340409": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 29.17,
+    "calificacion": 79.17
+  },
+  "25330061340410": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 10.42,
+    "calificacion": 60.42
+  },
+  "25330061340411": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 37.5,
+    "calificacion": 87.5
+  },
+  "25330061340412": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 10.0,
+    "posttest": 25.0,
+    "calificacion": 65.0
+  },
+  "25330061340413": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 31.3,
+    "calificacion": 81.3
+  },
+  "25330061340414": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 18.8,
+    "calificacion": 68.8
+  },
+  "25330061340415": {
+    "apuntes": 5.0,
+    "tarea": 10.0,
+    "test": 20.0,
+    "posttest": 37.5,
+    "calificacion": 72.5
+  },
+  "25330061340416": {
+    "apuntes": 5.0,
+    "tarea": 0.0,
+    "test": 10.0,
+    "posttest": 16.67,
+    "calificacion": 31.67
+  },
+  "25330061340417": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 18.8,
+    "calificacion": 68.8
+  },
+  "25330061340418": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 39.58,
+    "calificacion": 89.58
+  },
+  "25330061340419": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 10.0,
+    "posttest": 25.0,
+    "calificacion": 65.0
+  },
+  "25330061340420": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 18.8,
+    "calificacion": 68.8
+  },
+  "25330061340421": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 33.33,
+    "calificacion": 83.33
+  },
+  "25330061340422": {
+    "apuntes": 10.0,
+    "tarea": 20.0,
+    "test": 20.0,
+    "posttest": 22.92,
+    "calificacion": 72.92
+  }
+};
 
     const LAST_UPDATED = new Date().toLocaleString();
 
@@ -50,9 +418,7 @@
     const card = document.getElementById('card');
 
     function renderResultado(matricula, registro) {
-      const fmt = (v) => (v === undefined || v === null || String(v).trim() === '' ? '—' : `${v}%`);
-      const total = ((Number(registro.apuntes)||0)+(Number(registro.tarea)||0)+(Number(registro.test)||0)+(Number(registro.posttest)||0))/4;
-
+      const fmt = (v) => (v === undefined || v === null || String(v).trim() === '' ? '—' : v);
       card.innerHTML = `
         <div class="flex items-start justify-between gap-4">
           <div>
@@ -63,32 +429,33 @@
         <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div class="rounded-xl border border-slate-200 p-3 bg-white">
             <p class="text-xs uppercase tracking-wide text-slate-500">Apuntes</p>
-            <p class="text-lg font-semibold">${fmt(registro.apuntes)}</p>
+            <p class="text-lg font-semibold">${fmt(registro.apuntes)}%</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-3 bg-white">
             <p class="text-xs uppercase tracking-wide text-slate-500">Tarea</p>
-            <p class="text-lg font-semibold">${fmt(registro.tarea)}</p>
+            <p class="text-lg font-semibold">${fmt(registro.tarea)}%</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-3 bg-white">
             <p class="text-xs uppercase tracking-wide text-slate-500">Test</p>
-            <p class="text-lg font-semibold">${fmt(registro.test)}</p>
+            <p class="text-lg font-semibold">${fmt(registro.test)}%</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-3 bg-white">
             <p class="text-xs uppercase tracking-wide text-slate-500">Post-test</p>
-            <p class="text-lg font-semibold">${fmt(registro.posttest)}</p>
+            <p class="text-lg font-semibold">${fmt(registro.posttest)}%</p>
           </div>
           <div class="rounded-xl border border-indigo-200 p-3 bg-indigo-50 col-span-1 sm:col-span-2">
             <p class="text-xs uppercase tracking-wide text-slate-500">Calificación Total</p>
-            <p class="text-xl font-bold text-indigo-700">${fmt(total.toFixed(2))}</p>
+            <p class="text-xl font-bold text-indigo-700">${fmt(registro.calificacion)}%</p>
           </div>
         </div>
       `;
+
       resultado.classList.remove('hidden');
     }
 
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const matricula = input.value.trim();
+      const matricula = parseInt(input.value.trim(), 10);
       const registro = DATA[matricula];
       if (!registro) {
         card.innerHTML = '<p class="text-rose-600">No se encontró la matrícula.</p>';
@@ -102,4 +469,3 @@
   </script>
 </body>
 </html>
-
